@@ -4,9 +4,12 @@
              x:Class="MauiCustoViagem.Views.AddPedágio"
              Title="AddPedágio">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Local:"/>
+        <Entry x:Name="txt_local"/>
+
+        <Label Text="Valor:"/>
+        <Entry x:Name="txt_valor"/>
+
+        <Button x:Name="btn_salvar" Text="Salvar" Margin="500,10,500,0"/>
     </VerticalStackLayout>
 </ContentPage>

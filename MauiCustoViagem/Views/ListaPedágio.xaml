@@ -4,9 +4,26 @@
              x:Class="MauiCustoViagem.Views.ListaPedágio"
              Title="ListaPedágio">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ListView x:Name="lst_local">
+            <ListView.Header>
+                <Grid ColumnDefinitions="*, auto">
+                    <Label Grid.Column="0" Text="Local:"/>
+                    <Label Grid.Column="1" Text="Valor:"/>
+                </Grid>
+
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid ColumnDefinitions="*,auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Local}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Valor}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btn_somar" Text="Somar"/>
+        <Button x:Name="btn_AddNovo" Text="Add Novo"/>
     </VerticalStackLayout>
 </ContentPage>
