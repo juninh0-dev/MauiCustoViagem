@@ -60,13 +60,23 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\AddPedágio.xaml">
+	  <Compile Update="Views\AddPedagio.xaml.cs">
+	    <DependentUpon>AddPedagio.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ListaPedagio.xaml.cs">
+	    <DependentUpon>ListaPedagio.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\AddPedagio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ListaPedágio.xaml">
+	  <MauiXaml Update="Views\ListaPedagio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

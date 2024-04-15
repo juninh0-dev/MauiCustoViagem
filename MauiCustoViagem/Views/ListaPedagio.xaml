@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiCustoViagem.Views.ListaPedágio"
-             Title="ListaPedágio">
+             x:Class="MauiCustoViagem.Views.ListaPedagio"
+             Title="ListaPedagio">
     <VerticalStackLayout>
-        <ListView x:Name="lst_local">
+        <ListView x:Name="lst_pedagio">
             <ListView.Header>
                 <Grid ColumnDefinitions="*, auto">
                     <Label Grid.Column="0" Text="Local:"/>
@@ -23,7 +23,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="btn_somar" Text="Somar"/>
-        <Button x:Name="btn_AddNovo" Text="Add Novo"/>
+        <Button x:Name="btn_somar" Text="Somar" Margin="500,10,500,0"/>
+        <Button x:Name="btn_AddNovo" Text="Add Novo" Margin="500,10,500,0"/>
     </VerticalStackLayout>
 </ContentPage>

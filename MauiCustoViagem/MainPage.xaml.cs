@@ -16,7 +16,7 @@
 
         private async void btn_AddPed_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.AddPedágio());
+            await Navigation.PushAsync(new Views.AddPedagio());
         }
 
         private async void btn_ListaPed_Clicked(object sender, EventArgs e)
