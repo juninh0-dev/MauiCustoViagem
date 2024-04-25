@@ -11,9 +11,9 @@
             
             <Label x:Name="lbl_valor" Text="Valor: "/>
 
-            <Button x:Name="btn_calc" Text="Calcular" Clicked="btn_calc_Clicked"/>
+            <Button x:Name="btn_calc" Text="Calcular" Clicked="btn_calc_Clicked" HorizontalOptions="Center" Margin="10"/>
 
-            <Button x:Name="btn_novo" Text="Criar nova viagem" Clicked="btn_novo_Clicked"/>
+            <Button x:Name="btn_novo" Text="Criar nova viagem" Clicked="btn_novo_Clicked" HorizontalOptions="Center" Margin="10"/>
         </StackLayout>
     </ScrollView>
 

@@ -29,9 +29,9 @@
                         <Entry x:Name="txt_gas"/>
 
 
-            <Button x:Name="btn_AddPed" Text="Add Pedágio" Clicked="btn_AddPed_Clicked" Margin="500,10,500,0"/>
-            <Button x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked" Margin="500,10,500,0"/>
-            <Button x:Name="btn_ListaPed" Text="Lista Pedágio" Clicked="btn_ListaPed_Clicked" Margin="500,10,500,0"/>
+            <Button x:Name="btn_AddPed" Text="Add Pedágio" Clicked="btn_AddPed_Clicked" HorizontalOptions="Center" Margin="10" />
+            <Button x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked" HorizontalOptions="Center" Margin="10"/>
+            <Button x:Name="btn_ListaPed" Text="Lista Pedágio" Clicked="btn_ListaPed_Clicked" HorizontalOptions="Center" Margin="10"/>
 
         </VerticalStackLayout>
     </ContentPage.Content>
